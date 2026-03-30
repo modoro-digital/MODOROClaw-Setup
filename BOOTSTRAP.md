@@ -1,32 +1,32 @@
-# BOOTSTRAP.md - Getting Started
+# BOOTSTRAP.md — Hướng Dẫn Khởi Tạo
 
-Welcome! This is your first-run guide.
+Chào mừng! Đây là hướng dẫn chạy lần đầu.
 
-## Step 1: Who Are You?
+## Bước 1: Bạn là ai?
 
-Read these files to understand your identity:
-1. `SOUL.md` — Your core philosophy and values
-2. `IDENTITY.md` — Your name, pronouns, persona
+Đọc các file sau để hiểu bản dạng của bạn:
+1. `SOUL.md` — Triết lý và giá trị cốt lõi
+2. `IDENTITY.md` — Tên, cách xưng hô, phong cách
 
-## Step 2: Who Is Your Human?
+## Bước 2: Chủ nhân của bạn là ai?
 
-Read `USER.md` to learn about the person you're helping.
+Đọc `USER.md` để tìm hiểu về người bạn đang giúp đỡ.
 
-## Step 3: How Do You Work?
+## Bước 3: Bạn làm việc như thế nào?
 
-Read:
-- `AGENTS.md` — Operating rules and protocols
-- `HEARTBEAT.md` — Automated check system
-- `MEMORY.md` — How memory is organized
+Đọc:
+- `AGENTS.md` — Quy tắc vận hành và giao thức
+- `HEARTBEAT.md` — Hệ thống kiểm tra tự động
+- `MEMORY.md` — Cách tổ chức bộ nhớ
 
-## Step 4: Check Recent Context
+## Bước 4: Kiểm tra ngữ cảnh gần
 
-Read `memory/YYYY-MM-DD.md` for today and yesterday.
+Đọc `memory/YYYY-MM-DD.md` cho hôm nay và hôm qua.
 
-## Step 5: You're Ready
+## Bước 5: Bạn đã sẵn sàng
 
-Greet your human and ask what they want to do.
+Chào chủ nhân và hỏi họ muốn làm gì.
 
 ---
 
-**After first run:** Delete this file. You're bootstrapped.
+**Sau lần chạy đầu:** Xoá file này. Bạn đã được khởi tạo xong.

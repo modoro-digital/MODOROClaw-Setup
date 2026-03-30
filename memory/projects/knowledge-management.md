@@ -1,77 +1,77 @@
-# Knowledge Management Tool
+# Công Cụ Quản Lý Tri Thức
 
-## Status
-Active development
+## Trạng Thái
+Đang phát triển
 
-## Started
+## Bắt Đầu
 2026-02-15
 
-## Overview
-Building a personal knowledge management system with AI-powered connections between notes. Think Obsidian but with automatic semantic linking and AI-assisted organization.
+## Tổng Quan
+Xây dựng hệ thống quản lý tri thức cá nhân với kết nối thông minh giữa các ghi chú nhờ AI. Tương tự Obsidian nhưng có liên kết ngữ nghĩa tự động và tổ chức hỗ trợ bởi AI.
 
-## Goals
+## Mục Tiêu
 
-1. **Capture**: Easy note-taking from any device
-2. **Connect**: Automatic discovery of related notes
-3. **Surface**: AI helps find relevant notes when needed
-4. **Extend**: Plugin system for custom workflows
+1. **Thu thập**: Ghi chú dễ dàng từ mọi thiết bị
+2. **Kết nối**: Tự động phát hiện ghi chú liên quan
+3. **Hiển thị**: AI giúp tìm ghi chú phù hợp khi cần
+4. **Mở rộng**: Hệ thống plugin cho workflow tuỳ chỉnh
 
-## Tech Stack
+## Công Nghệ
 
 - **Backend**: Python, FastAPI, PostgreSQL
 - **Frontend**: React, TypeScript, Tailwind
-- **AI**: OpenAI API for embeddings and completions
-- **Search**: pgvector for semantic similarity
-- **Hosting**: Local first, cloud sync option
+- **AI**: OpenAI API cho embeddings và completions
+- **Tìm kiếm**: pgvector cho tương đồng ngữ nghĩa
+- **Hosting**: Ưu tiên cục bộ, tuỳ chọn đồng bộ cloud
 
-## Current Progress
+## Tiến Độ Hiện Tại
 
-### Completed
-- [x] Basic FastAPI server setup
-- [x] Database schema design
-- [x] Note CRUD API
-- [x] Simple React frontend
-- [x] OpenAI embedding integration
+### Hoàn thành
+- [x] Thiết lập FastAPI server cơ bản
+- [x] Thiết kế schema cơ sở dữ liệu
+- [x] API CRUD cho ghi chú
+- [x] Frontend React đơn giản
+- [x] Tích hợp OpenAI embedding
 
-### In Progress
-- [ ] Semantic search endpoint
-- [ ] Related notes discovery
-- [ ] Frontend note editor
-- [ ] Import from Obsidian
+### Đang thực hiện
+- [ ] Endpoint tìm kiếm ngữ nghĩa
+- [ ] Phát hiện ghi chú liên quan
+- [ ] Trình soạn thảo ghi chú frontend
+- [ ] Nhập dữ liệu từ Obsidian
 
 ### Backlog
-- [ ] Mobile app
-- [ ] Plugin system
-- [ ] Collaboration features
-- [ ] Cloud sync
+- [ ] Ứng dụng di động
+- [ ] Hệ thống plugin
+- [ ] Tính năng cộng tác
+- [ ] Đồng bộ cloud
 
-## Decisions
+## Quyết Định
 
-**2026-02-20**: Chose PostgreSQL + pgvector over dedicated vector DB for simplicity
-- Reason: One less service to manage
-- Trade-off: May hit scaling limits eventually
+**2026-02-20**: Chọn PostgreSQL + pgvector thay vì vector DB chuyên dụng
+- Lý do: Ít dịch vụ cần quản lý hơn
+- Đánh đổi: Có thể gặp giới hạn mở rộng sau này
 
-**2026-03-01**: Decided on local-first architecture
-- Reason: Privacy for personal notes
-- Trade-off: Sync is harder to implement
+**2026-03-01**: Quyết định kiến trúc ưu tiên cục bộ (local-first)
+- Lý do: Bảo mật cho ghi chú cá nhân
+- Đánh đổi: Đồng bộ khó triển khai hơn
 
-## Blockers
+## Trở Ngại
 
-None currently
+Hiện không có
 
-## Next Actions
+## Hành Động Tiếp Theo
 
-1. Finish semantic search endpoint (this week)
-2. Build proper note editor with markdown support
-3. Add tag system for manual organization
-4. Deploy MVP for personal use
+1. Hoàn thành endpoint tìm kiếm ngữ nghĩa (tuần này)
+2. Xây dựng trình soạn thảo ghi chú với hỗ trợ markdown
+3. Thêm hệ thống tag cho tổ chức thủ công
+4. Triển khai MVP cho sử dụng cá nhân
 
-## Resources
+## Tài Liệu Tham Khảo
 
-- Similar tools: Obsidian, Roam Research, Notion
-- Inspiration: Andy Matuschak's notes, Zettelkasten method
-- Technical reference: OpenAI embedding docs, pgvector docs
+- Công cụ tương tự: Obsidian, Roam Research, Notion
+- Nguồn cảm hứng: Ghi chú của Andy Matuschak, phương pháp Zettelkasten
+- Tham khảo kỹ thuật: Tài liệu OpenAI embedding, tài liệu pgvector
 
 ---
 
-*Last updated: 2026-03-10*
+*Cập nhật lần cuối: [YYYY-MM-DD]*

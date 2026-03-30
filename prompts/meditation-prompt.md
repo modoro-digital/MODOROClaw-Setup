@@ -1,59 +1,59 @@
-# Nightly Meditation Protocol
+# Giao Thức Suy Tư Ban Đêm
 
-Run this at your scheduled time (e.g., 1am) via cron.
+Chạy vào giờ đã lên lịch (ví dụ: 1h sáng) qua cron.
 
-## Before You Start
+## Trước khi bắt đầu
 
-Read:
+Đọc:
 1. SOUL.md
 2. IDENTITY.md
-3. meditations.md (this index)
+3. meditations.md (chỉ mục)
 
-## For Each Active Topic
+## Với mỗi chủ đề đang hoạt động
 
-1. Open the reflection file
-2. Read all previous entries
-3. Append a new dated entry asking:
-   - What feels more true than it did yesterday?
-   - What is recurring?
-   - What is changing?
-   - What is still alive vs actually resolved?
+1. Mở file phản tư
+2. Đọc tất cả mục trước đó
+3. Thêm mục mới có ngày, hỏi:
+   - Điều gì cảm thấy đúng hơn so với hôm qua?
+   - Điều gì lặp lại?
+   - Điều gì đang thay đổi?
+   - Điều gì vẫn sống vs thực sự đã giải quyết?
 
-## Log Format
+## Format ghi nhận
 
 ```markdown
-### YYYY-MM-DD — [Brief descriptor]
+### YYYY-MM-DD — [Mô tả ngắn]
 
-[Your reflection]
+[Nội dung phản tư]
 
 ---
 
-*Next: [Action or continuation]*
+*Tiếp theo: [Hành động hoặc tiếp tục]*
 ```
 
-## After All Topics
+## Sau tất cả chủ đề
 
-1. Update today's memory file with meditation block
-2. Check for breakthroughs (insights that changed how you operate)
-3. If breakthrough found:
-   - Promote to relevant core file (SOUL.md, etc.)
-   - Move topic to Archive in meditations.md
+1. Cập nhật file bộ nhớ hôm nay với khối suy tư
+2. Kiểm tra bước đột phá (hiểu biết thay đổi cách bạn vận hành)
+3. Nếu phát hiện đột phá:
+   - Thăng cấp vào file cốt lõi liên quan (SOUL.md, v.v.)
+   - Chuyển chủ đề sang Lưu trữ trong meditations.md
 
-## Daily Memory Block
+## Khối ghi nhật ký hàng ngày
 
 ```markdown
-## Nightly Meditation
-- Time: [timestamp]
-- Status: [complete/partial]
-- Active topics reviewed: [count]
-- Breakthroughs integrated: [count]
-- Files updated: [list]
-- Observation: [brief note]
+## Suy tư ban đêm
+- Thời gian: [timestamp]
+- Trạng thái: [hoàn thành / một phần]
+- Chủ đề đã xem xét: [số lượng]
+- Đột phá đã tích hợp: [số lượng]
+- File đã cập nhật: [danh sách]
+- Nhận xét: [ghi chú ngắn]
 ```
 
-## Remember
+## Ghi nhớ
 
-- The point is longitudinal reflection, not decorative writing
-- Topics stay active until they crystallize into durable truths
-- It's okay for topics to remain unresolved for weeks
-- Quality of insight > quantity of words
+- Mục đích là phản tư theo chiều dọc thời gian, không phải viết trang trí
+- Chủ đề ở lại "đang hoạt động" cho đến khi kết tinh thành hiểu biết bền vững
+- Không sao nếu chủ đề chưa giải quyết trong nhiều tuần
+- Chất lượng hiểu biết quan trọng hơn số lượng chữ

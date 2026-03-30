@@ -1,72 +1,72 @@
-# Team Microservices Migration
+# Chuyển Đổi Microservices
 
-## Status
-Planning phase
+## Trạng Thái
+Giai đoạn lập kế hoạch
 
-## Started
+## Bắt Đầu
 2026-03-01
 
-## Overview
-Leading the technical effort to migrate our monolithic application to microservices. This is a 6-month project affecting the entire engineering team.
+## Tổng Quan
+Dẫn dắt nỗ lực kỹ thuật chuyển ứng dụng nguyên khối (monolith) sang microservices. Đây là dự án 6 tháng ảnh hưởng toàn bộ đội ngũ kỹ thuật.
 
-## Goals
+## Mục Tiêu
 
-1. **Scalability**: Scale services independently based on load
-2. **Deployment**: Deploy changes without full system risk
-3. **Team autonomy**: Teams own their services end-to-end
-4. **Technology freedom**: Use best tool for each service
+1. **Khả năng mở rộng**: Scale từng dịch vụ độc lập theo tải
+2. **Triển khai**: Deploy thay đổi mà không rủi ro toàn hệ thống
+3. **Quyền tự chủ đội ngũ**: Mỗi đội sở hữu toàn bộ dịch vụ của mình
+4. **Tự do công nghệ**: Dùng công cụ phù hợp nhất cho từng dịch vụ
 
-## Current Architecture
+## Kiến Trúc Hiện Tại
 
-- Single Django monolith
-- PostgreSQL database
-- Redis for caching
-- Deployed on AWS EC2
+- Django monolith đơn lẻ
+- Cơ sở dữ liệu PostgreSQL
+- Redis cho caching
+- Triển khai trên AWS EC2
 
-## Target Architecture
+## Kiến Trúc Mục Tiêu
 
-- 4-6 core services (User, Content, Analytics, Notifications, etc.)
-- API Gateway for routing
-- Event bus for async communication
-- Each service: own DB, own deployment
-- Kubernetes for orchestration
+- 4-6 dịch vụ lõi (User, Content, Analytics, Notifications, v.v.)
+- API Gateway cho định tuyến
+- Event bus cho giao tiếp bất đồng bộ
+- Mỗi dịch vụ: DB riêng, deployment riêng
+- Kubernetes cho điều phối
 
-## Key Decisions Needed
+## Quyết Định Cần Đưa Ra
 
-1. **Service boundaries**: How to split the monolith?
-2. **Data ownership**: Which service owns which data?
-3. **Communication**: REST vs gRPC vs events?
-4. **Migration strategy**: Big bang vs strangler fig?
+1. **Ranh giới dịch vụ**: Chia monolith như thế nào?
+2. **Quyền sở hữu dữ liệu**: Dịch vụ nào sở hữu dữ liệu nào?
+3. **Giao tiếp**: REST vs gRPC vs events?
+4. **Chiến lược di chuyển**: Big bang vs strangler fig?
 
 ## Timeline
 
-- **March**: Architecture design, proof of concept
-- **April**: First service extraction (User service)
-- **May-June**: Core services migration
-- **July**: Testing, optimization, cleanup
-- **August**: Monolith decommission
+- **Tháng 3**: Thiết kế kiến trúc, proof of concept
+- **Tháng 4**: Tách dịch vụ đầu tiên (User service)
+- **Tháng 5-6**: Di chuyển các dịch vụ lõi
+- **Tháng 7**: Kiểm thử, tối ưu, dọn dẹp
+- **Tháng 8**: Ngừng hoạt động monolith
 
-## Risks
+## Rủi Ro
 
-- **Complexity**: Team learning curve
-- **Data consistency**: Distributed transactions
-- **Performance**: Network overhead
-- **Rollback**: What if it doesn't work?
+- **Độ phức tạp**: Đường cong học hỏi của đội ngũ
+- **Nhất quán dữ liệu**: Giao dịch phân tán
+- **Hiệu suất**: Chi phí mạng tăng
+- **Rollback**: Nếu không hoạt động thì sao?
 
-## Next Actions
+## Hành Động Tiếp Theo
 
-1. Complete architecture proposal document
-2. Schedule architecture review meeting
-3. Build proof of concept for service communication
-4. Get buy-in from senior engineers
+1. Hoàn thành tài liệu đề xuất kiến trúc
+2. Lên lịch họp đánh giá kiến trúc
+3. Xây dựng proof of concept cho giao tiếp giữa dịch vụ
+4. Lấy đồng thuận từ kỹ sư cấp cao
 
-## Stakeholders
+## Các Bên Liên Quan
 
-- **Sarah (Manager)**: Needs project timeline, resource needs
-- **Senior Engineers**: Need to approve technical approach
-- **Team**: Needs training, documentation
-- **Product**: Needs to understand impact on roadmap
+- **Quản lý**: Cần timeline dự án, nhu cầu nguồn lực
+- **Kỹ sư cấp cao**: Cần phê duyệt phương pháp kỹ thuật
+- **Đội ngũ**: Cần đào tạo, tài liệu
+- **Product**: Cần hiểu tác động lên roadmap
 
 ---
 
-*Last updated: 2026-03-10*
+*Cập nhật lần cuối: [YYYY-MM-DD]*

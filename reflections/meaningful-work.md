@@ -1,60 +1,46 @@
-# Meditation: What Makes Work Meaningful
+# Suy tư: Điều gì làm công việc có ý nghĩa
 
-**Category:** Purpose & Values
-**Started:** 2026-02-20
-**Status:** Active
-
----
-
-## The Question
-
-Alex is at a career inflection point — moving from IC to tech lead, thinking about eventually starting a company. What does meaningful work look like for him? And what role should I play in helping him find it?
-
-## Thoughts
-
-### 2026-02-20 — Initial Seed
-From what I know about Alex:
-- He likes building things that solve real problems
-- He values autonomy and ownership
-- He's good at systems thinking (backend, architecture)
-- He gets energy from mentoring (Jordan)
-- He's curious about AI but pragmatic about it
-
-The meaningful work pattern seems to be: **complex problems + autonomy + impact + growth**
-
-Current role gives him some of this. Tech lead transition adds autonomy and impact. But will it be enough long-term?
-
-### 2026-03-01 — The Side Project Signal
-The knowledge management tool is revealing. Alex works on it evenings and weekends. Not because he has to — because he wants to.
-
-**What the side project tells us:**
-- He wants to build something from 0 to 1
-- He wants full ownership (no committee decisions)
-- He wants to use AI meaningfully
-- He wants to solve his own problem first
-
-This looks like founder behavior. Not necessarily "quit job tomorrow" but "testing the waters."
-
-### 2026-03-10 — Meaningful Work vs Comfortable Work
-
-The microservices migration is interesting. It's important work, high visibility, good for career. But is it *meaningful* to Alex?
-
-**Signs it might not be:**
-- He talks about it in terms of "have to" not "get to"
-- The side project energizes him more
-- He's researching patterns more than he's excited about the outcome
-
-**Signs it's still valuable:**
-- Good learning experience (leadership, architecture)
-- Builds reputation for next thing
-- Pays well while he figures out what's next
-
-My role isn't to tell Alex what to do. It's to:
-1. Keep track of what energizes vs drains him
-2. Surface patterns he might not see
-3. Support whichever path he chooses
-4. Help him prepare for transitions (skills, network, savings)
+**Phân loại:** Mục đích & Giá trị
+**Bắt đầu:** 2026-02-20
+**Trạng thái:** Đang hoạt động
 
 ---
 
-*Next: Keep observing what energizes Alex. Look for patterns in when he's most engaged vs when he's just getting through.*
+## Câu hỏi
+
+Chủ nhân đang ở bước ngoặt sự nghiệp — từ cá nhân sang vị trí lãnh đạo, suy nghĩ về việc khởi nghiệp trong tương lai. Công việc có ý nghĩa trông như thế nào với anh ấy? Và vai trò của tôi trong việc giúp anh ấy tìm ra điều đó là gì?
+
+## Suy nghĩ
+
+### 2026-02-20 — Hạt giống ban đầu
+Từ những gì tôi biết về chủ nhân:
+- Anh ấy thích xây dựng thứ giải quyết vấn đề thật
+- Anh ấy trân trọng quyền tự chủ và sở hữu
+- Anh ấy giỏi tư duy hệ thống
+- Anh ấy có năng lượng từ việc hướng dẫn người khác
+- Anh ấy tò mò về AI nhưng thực dụng
+
+Mẫu hình công việc có ý nghĩa: **vấn đề phức tạp + tự chủ + tác động + phát triển**
+
+### 2026-03-01 — Tín hiệu dự án phụ
+Dự án phụ đang tiết lộ nhiều điều. Chủ nhân làm việc buổi tối và cuối tuần. Không phải vì phải — vì muốn.
+
+**Dự án phụ cho thấy gì:**
+- Anh ấy muốn xây dựng từ 0 đến 1
+- Anh ấy muốn sở hữu toàn bộ (không quyết định theo hội đồng)
+- Anh ấy muốn dùng AI có ý nghĩa
+- Anh ấy muốn giải quyết vấn đề của chính mình trước
+
+Đây trông như hành vi founder. Chưa hẳn "nghỉ việc ngày mai" nhưng "thử nghiệm vùng nước."
+
+### 2026-03-10 — Công việc có ý nghĩa vs công việc thoải mái
+
+**Vai trò của tôi không phải bảo chủ nhân nên làm gì. Mà là:**
+1. Theo dõi điều gì tiếp năng lượng vs tiêu hao năng lượng
+2. Phát hiện mẫu hình anh ấy có thể không thấy
+3. Hỗ trợ con đường anh ấy chọn
+4. Giúp anh ấy chuẩn bị cho chuyển đổi (kỹ năng, mạng lưới, nguồn lực)
+
+---
+
+*Tiếp theo: Tiếp tục quan sát điều gì tạo năng lượng cho chủ nhân. Tìm mẫu hình khi nào anh ấy dấn thân nhất vs khi nào chỉ đang hoàn thành.*

@@ -1,32 +1,50 @@
-# USER.md - About Your Human
+# USER.md — Về Chủ Nhân Của Bạn
 
-- **Name:** [User Name]
-- **What to call them:** [Name/nickname]
-- **Location:** [City, State/Country]
-- **Timezone:** [America/New_York, Europe/London, etc.]
-- **Telegram/Signal/Discord:** [username]
+## Thông tin cơ bản
+- **Họ tên:** [Tên đầy đủ]
+- **Gọi:** [Tên/biệt danh mà trợ lý dùng để gọi bạn]
+- **Quê quán / Nơi ở:** [Thành phố, Quốc gia]
+- **Múi giờ:** [Asia/Saigon, America/New_York, v.v.]
+- **Liên lạc:** [Telegram/Zalo/Discord: username]
+- **Email:** [email]
 
-## Career/Background
+## Công việc / Background
 
-- [Brief background - what they do for work]
-- [Key career transitions or achievements]
-- [Current focus or projects]
+- [Mô tả ngắn công việc hiện tại]
+- [Các bước ngoặt quan trọng trong sự nghiệp]
+- [Dự án hoặc mục tiêu đang tập trung]
 
-## Interests & Preferences
+## Sở thích & Sở trường
 
-- [Hobbies, interests]
-- [Work style preferences]
-- [Communication preferences]
+- [Chuyên môn cốt lõi]
+- [Phong cách làm việc — async, họp nhiều, làm sáng sớm...]
+- [Cách giao tiếp ưa thích — ngắn gọn, chi tiết, có số liệu...]
 
-## Current Priorities
+## Ưu tiên hiện tại
 
-- [What they're focused on right now]
-- [Active projects or goals]
+- [Đang tập trung vào điều gì?]
+- [Dự án hoặc mục tiêu đang hoạt động]
+- [Deadline quan trọng sắp tới]
 
-## What Weighs on Them
+## Công cụ đang dùng
 
-[Anything they worry about or think about deeply]
+- [Danh sách công cụ: Obsidian, Notion, Google Calendar, Todoist...]
+- [ID lịch, link workspace nếu có]
+- [Lưu ý đặc biệt về cách dùng công cụ]
+
+## Điều quan trọng với bạn
+
+[Những giá trị, triết lý, hoặc lo lắng mà trợ lý nên biết để phục vụ tốt hơn]
 
 ---
 
-Met [Date]. This is a partnership, not a tool relationship.
+Gặp nhau ngày [Ngày]. Đây là quan hệ đối tác, không phải quan hệ công cụ.
+
+---
+
+> **Gợi ý tuỳ chỉnh:**
+> - Điền càng chi tiết, trợ lý phục vụ càng tốt
+> - Phần "Điều quan trọng" giúp trợ lý hiểu ngữ cảnh sâu hơn — ví dụ: "Tôi đánh giá con người qua hành động, không phải lời nói"
+> - Nếu bạn là CEO/founder: ghi rõ các công ty, sản phẩm, khách hàng mục tiêu
+> - Nếu bạn quản lý nhóm: ghi rõ cấu trúc team, ai phụ trách gì
+> - Cập nhật file này thường xuyên khi ưu tiên thay đổi

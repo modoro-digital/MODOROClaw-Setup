@@ -1,54 +1,54 @@
-# Memory Database Tool
+# Công Cụ Bộ Nhớ Database
 
-A lightweight SQLite-based memory system with full-text search for fast, relevant memory retrieval.
+Hệ thống bộ nhớ nhẹ dựa trên SQLite với tìm kiếm toàn văn để truy xuất bộ nhớ nhanh và chính xác.
 
-## Setup
+## Cài đặt
 
 ```bash
 npm install
-node rebuild-db.js  # Initial build
+node rebuild-db.js  # Xây dựng lần đầu
 ```
 
-## Usage
+## Sử dụng
 
 ```bash
-# Search for relevant memories
-node relevant-memory.js "query about previous work"
+# Tìm kiếm bộ nhớ liên quan
+node relevant-memory.js "truy vấn về công việc trước đó"
 
-# Rebuild after significant memory edits
+# Xây lại sau khi chỉnh sửa bộ nhớ đáng kể
 node rebuild-db.js
 ```
 
-## How It Works
+## Cách hoạt động
 
-1. Scans all markdown files in workspace
-2. Extracts content and metadata
-3. Builds SQLite database with FTS5 (full-text search)
-4. Provides semantic-like search via text similarity
+1. Quét tất cả file markdown trong workspace
+2. Trích xuất nội dung và metadata
+3. Xây dựng cơ sở dữ liệu SQLite với FTS5 (tìm kiếm toàn văn)
+4. Cung cấp tìm kiếm tương tự ngữ nghĩa qua so sánh văn bản
 
-## Files
+## File
 
-- `relevant-memory.js` - Search utility
-- `rebuild-db.js` - Database builder
-- `memory.db` - SQLite database (auto-generated)
+- `relevant-memory.js` — Tiện ích tìm kiếm
+- `rebuild-db.js` — Xây dựng database
+- `memory.db` — Cơ sở dữ liệu SQLite (tự tạo)
 
-## Why SQLite + FTS5?
+## Tại sao SQLite + FTS5?
 
-- Zero external dependencies
-- Fast enough for most use cases
-- No API costs
-- Works offline
-- Portable (single file)
+- Không phụ thuộc bên ngoài
+- Đủ nhanh cho hầu hết trường hợp
+- Không tốn phí API
+- Hoạt động offline
+- Di động (một file duy nhất)
 
-## When to Use
+## Khi nào dùng
 
-Use this when you need to find relevant context quickly without paying for vector embeddings. For most personal assistant use cases, FTS5 similarity is "good enough."
+Dùng khi cần tìm ngữ cảnh liên quan nhanh chóng mà không cần trả phí cho vector embeddings. Với hầu hết trường hợp trợ lý cá nhân, tìm kiếm FTS5 là "đủ tốt."
 
-## Integration
+## Tích hợp
 
-AGENTS.md recommends using this before drilling into markdown sources:
+AGENTS.md khuyên dùng tool này trước khi đi sâu vào file markdown:
 
 ```bash
-node tools/memory-db/relevant-memory.js "budget research agent"
-# Then read the specific files it suggests
+node tools/memory-db/relevant-memory.js "dự án chuyển đổi"
+# Sau đó đọc file cụ thể mà nó gợi ý
 ```

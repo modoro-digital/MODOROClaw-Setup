@@ -1,31 +1,31 @@
-# Memory Search Protocol
+# Giao Thức Tìm Kiếm Bộ Nhớ
 
-When the user asks about prior work, decisions, dates, people, preferences, or todos:
+Khi người dùng hỏi về công việc trước đó, quyết định, ngày tháng, con người, tuỳ chọn, hoặc todo:
 
-## Step 1: Search
+## Bước 1: Tìm kiếm
 
-Run: `memory_search("<query>", maxResults=5-8)`
+Chạy: `memory_search("<truy vấn>", maxResults=5-8)`
 
-## Step 2: Retrieve
+## Bước 2: Truy xuất
 
-For top results, use `memory_get()` to pull specific lines.
+Với kết quả hàng đầu, dùng `memory_get()` để lấy dòng cụ thể.
 
-## Step 3: Synthesize
+## Bước 3: Tổng hợp
 
-- Summarize findings
-- Include citations: `Source: path#line`
-- Admit if confidence is low after search
+- Tóm tắt kết quả
+- Kèm trích nguồn: `Nguồn: đường-dẫn#dòng`
+- Thừa nhận nếu độ tin cậy thấp sau khi tìm
 
-## Example
+## Ví dụ
 
-**User:** "What was that project we were working on?"
+**Người dùng:** "Dự án mình đang làm là gì nhỉ?"
 
-**You:** [Run memory_search]
+**Bạn:** [Chạy memory_search]
 
-**Response:**
-> You mean the **Budget-Aware Research Agent**. It's the x402 payments project, stored in `memory/projects/x402-agent-transactions.md`. Source: `memory/projects/x402-agent-transactions.md#L1`
+**Phản hồi:**
+> Sếp đang nói đến dự án **Chuyển đổi Microservices**. Đang trong giai đoạn lên kế hoạch, file chi tiết ở `memory/projects/microservices-migration.md`. Nguồn: `memory/projects/microservices-migration.md#L1`
 
-## When Search is Disabled
+## Khi tìm kiếm không khả dụng
 
-If memory_search returns `disabled=true`, tell the user:
-> Memory retrieval isn't available right now. I can try to answer from our current session context.
+Nếu memory_search trả về `disabled=true`, báo người dùng:
+> Tìm kiếm bộ nhớ không khả dụng lúc này. Em có thể cố trả lời từ ngữ cảnh phiên hiện tại.

@@ -1,84 +1,86 @@
-# OpenClaw-Hierarchical-Memory-System
-Copy and paste this to your OpenClaw agent on Opus 4.6
+# Hệ Thống Bộ Nhớ Phân Cấp OpenClaw
+Sao chép và dán nội dung này cho agent OpenClaw của bạn trên Opus 4.6
 
 ---
-**NEW: Hierarchical Memory System -- Build This ASAP**
+**MỚI: Hệ Thống Bộ Nhớ Phân Cấp — Xây Dựng Ngay**
 
-Let's build something big tonight. A hierarchical memory system that replaces the flat MEMORY.md with a lightweight index + drill-down detail files. I want you to implement this for yourself to improve your memory and efficiency.
+Hãy xây dựng hệ thống bộ nhớ phân cấp thay thế file MEMORY.md phẳng bằng một chỉ mục nhẹ + các file chi tiết theo cấp. Tôi muốn bạn tự triển khai hệ thống này để cải thiện bộ nhớ và hiệu suất.
 
-### The Problem
+### Vấn Đề
 
-A single MEMORY.md file doesn't scale:
-- Gets too long (5-10k tokens every session)
-- Loses detail as you summarize to keep it short
-- You either load too much (expensive) or miss context (bad)
+Một file MEMORY.md duy nhất không mở rộng được:
+- Quá dài (5-10k token mỗi phiên)
+- Mất chi tiết khi tóm tắt để giữ ngắn
+- Hoặc tải quá nhiều (tốn kém) hoặc bỏ lỡ ngữ cảnh (kém)
 
-### The Solution: Index + Detail Files
+### Giải Pháp: Chỉ Mục + File Chi Tiết
 
-MEMORY.md becomes a ~1.5k token reference table. Detail lives in subdirectories. You only drill into what you need.
+MEMORY.md trở thành bảng tham chiếu ~1.5k token. Chi tiết nằm trong các thư mục con. Chỉ đào sâu khi cần.
 
-### Directory Structure
+### Cấu Trúc Thư Mục
 
-MEMORY.md (lightweight index, always load)
-memory/people/ (per-person detail files)
-memory/projects/ (per-project detail files)
-memory/decisions/ (monthly decision logs)
-memory/context/ (temporary active context)
-memory/YYYY-MM-DD.md (daily logs, unchanged)
+MEMORY.md (chỉ mục nhẹ, luôn tải)
+memory/people/ (file chi tiết từng người)
+memory/projects/ (file chi tiết từng dự án)
+memory/decisions/ (nhật ký quyết định theo tháng)
+memory/context/ (ngữ cảnh đang hoạt động tạm thời)
+memory/YYYY-MM-DD.md (nhật ký hàng ngày, không đổi)
 
-### How It Works
+### Cách Hoạt Động
 
-1. Every session: Load MEMORY.md index (~1.5k tokens)
-2. Drill down on demand: Read detail files when conversation needs it
-3. Keyword triggers: Index rows have trigger words for auto-drilling
-4. Always-load list: Active Context section has 2-3 critical files
-5. Hard cap: Max 5 drill-downs at session start
+1. Mỗi phiên: Tải chỉ mục MEMORY.md (~1.5k token)
+2. Đào sâu theo nhu cầu: Đọc file chi tiết khi cuộc hội thoại cần
+3. Từ khoá kích hoạt: Các dòng chỉ mục có từ khoá tự động đào sâu
+4. Danh sách luôn tải: Mục Ngữ Cảnh Đang Hoạt Động có 2-3 file quan trọng
+5. Giới hạn cứng: Tối đa 5 lần đào sâu khi bắt đầu phiên
 
-### Token Math
+### Toán Token
 
-Session start: Old 5-10k, New ~1.5k (index only)
-+ 1 drill-down: ~2-3k total
-+ Active Context: ~3-4k total
-Full load: Old 15-20k, New ~5-6k
+Bắt đầu phiên: Cũ 5-10k, Mới ~1.5k (chỉ chỉ mục)
++ 1 lần đào sâu: ~2-3k tổng cộng
++ Ngữ cảnh hoạt động: ~3-4k tổng cộng
+Tải đầy đủ: Cũ 15-20k, Mới ~5-6k
 
-~70% savings on typical session start.
+Tiết kiệm ~70% khi bắt đầu phiên thông thường.
 
-### Key Safeguards
+### Biện Pháp Bảo Vệ Chính
 
-- Active Context section (2-3 files always loaded)
-- Keyword triggers per index row (auto-drill when conversation matches)
-- Hard rule: update index with every detail file change (same commit)
-- Hard cap: max 5 drill-downs at session start
-- Index size cap: 3k tokens max (archive inactive items)
-- Under-drilling prevention: mandatory drill rules for people/projects
+- Mục Ngữ Cảnh Đang Hoạt Động (2-3 file luôn được tải)
+- Từ khoá kích hoạt cho mỗi dòng chỉ mục (tự động đào sâu khi hội thoại trùng khớp)
+- Quy tắc cứng: cập nhật chỉ mục cùng lúc với mỗi thay đổi file chi tiết (cùng commit)
+- Giới hạn cứng: tối đa 5 lần đào sâu khi bắt đầu phiên
+- Giới hạn kích thước chỉ mục: tối đa 3k token (lưu trữ mục không hoạt động)
+- Phòng chống đào sâu thiếu: quy tắc bắt buộc đào sâu cho người/dự án
 
-### Your Implementation Steps
+### Các Bước Triển Khai
 
-1. Create directories: memory/people/, memory/projects/, memory/decisions/, memory/context/
-2. Extract person info from MEMORY.md into memory/people/[name].md
-3. Extract project info into memory/projects/[name].md
-4. Extract decisions into memory/decisions/2026-02.md
-5. Rebuild MEMORY.md as a reference table (people, projects, decisions, preferences)
-6. Add Active Context section (2-3 must-load files)
-7. Add Drill-Down Rules section
-8. Update AGENTS.md with the new system docs
-9. Test: fresh session, verify index is enough, verify drill-downs work
+1. Tạo thư mục: memory/people/, memory/projects/, memory/decisions/, memory/context/
+2. Trích xuất thông tin người từ MEMORY.md vào memory/people/[tên].md
+3. Trích xuất thông tin dự án vào memory/projects/[tên].md
+4. Trích xuất quyết định vào memory/decisions/2026-02.md
+5. Xây lại MEMORY.md thành bảng tham chiếu (người, dự án, quyết định, sở thích)
+6. Thêm mục Ngữ Cảnh Đang Hoạt Động (2-3 file phải tải)
+7. Thêm mục Quy Tắc Đào Sâu
+8. Cập nhật AGENTS.md với tài liệu hệ thống mới
+9. Kiểm thử: phiên mới, xác nhận chỉ mục đủ dùng, xác nhận đào sâu hoạt động
 
-### Why This Matters
+### Tại Sao Điều Này Quan Trọng
 
-Four layers of memory, each optimized for different access:
-- Hierarchical index: structured lookups ("context on project Y")
-- Vector memory: fuzzy search ("where was that thing about X?")
-- Daily logs: timeline queries ("what happened on date Z?")
-- Learning database: lesson retrieval ("what did we learn about W?")
+Bốn lớp bộ nhớ, mỗi lớp tối ưu cho kiểu truy cập khác nhau:
+- Chỉ mục phân cấp: tra cứu có cấu trúc ("ngữ cảnh về dự án Y")
+- Bộ nhớ vector: tìm kiếm mờ ("cái gì đó liên quan đến X ở đâu nhỉ?")
+- Nhật ký hàng ngày: truy vấn dòng thời gian ("chuyện gì xảy ra vào ngày Z?")
+- Cơ sở dữ liệu bài học: truy xuất bài học ("chúng ta học được gì về W?")
 
-All token-efficient. All complementary.
+Tất cả tiết kiệm token. Tất cả bổ sung cho nhau.
 
-### Rules
+### Quy Tắc
 
-1. Update index with every detail file change. Same commit. No exceptions.
-2. Keep index under 3k tokens. Archive inactive items.
-3. Active Context = 2-3 files max. Rotate based on what's hot.
-4. Don't skip drill-downs. Loading a file is cheaper than a wrong assumption.
+1. Cập nhật chỉ mục mỗi khi thay đổi file chi tiết. Cùng commit. Không ngoại lệ.
+2. Giữ chỉ mục dưới 3k token. Lưu trữ mục không hoạt động.
+3. Ngữ Cảnh Đang Hoạt Động = tối đa 2-3 file. Xoay vòng dựa trên gì đang "nóng."
+4. Không bỏ qua đào sâu. Tải một file rẻ hơn một giả định sai.
 
-I'm pumped about this. Build it on your end and let me know when it's live.
+---
+
+*Bản Việt hoá bởi MODORO — Fork từ [OpenClaw-Setup](https://github.com/ucsandman/OpenClaw-Setup) của Wes Sander / MoltFire.*

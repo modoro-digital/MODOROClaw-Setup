@@ -1,79 +1,79 @@
-# Decision Log Template
+# Mẫu Ghi Nhận Quyết Định
 
-Use this format for logging significant decisions in `memory/decisions/`.
+Dùng format này để ghi nhận quyết định quan trọng trong `memory/decisions/`.
 
-## File Name
+## Tên file
 
-`memory/decisions/YYYY-MM-topic.md`
+`memory/decisions/YYYY-MM-chu-de.md`
 
-## Structure
+## Cấu trúc
 
 ```markdown
-# Decision: [Brief Title]
+# Quyết định: [Tiêu đề ngắn]
 
-**Date:** YYYY-MM-DD
-**Status:** [Proposed / Decided / Implemented / Reverted]
-**Decision Maker:** [Who made the call]
-**Stakeholders:** [Who was consulted]
+**Ngày:** YYYY-MM-DD
+**Trạng thái:** [Đề xuất / Đã quyết định / Đã triển khai / Đã hoàn tác]
+**Người quyết định:** [Ai ra quyết định]
+**Các bên liên quan:** [Ai được tham vấn]
 
-## Context
+## Bối cảnh
 
-[What was the situation? What problem were we solving?]
+[Tình huống là gì? Đang giải quyết vấn đề gì?]
 
-## Options Considered
+## Các phương án đã xem xét
 
-### Option 1: [Name]
-- Pros: ...
-- Cons: ...
+### Phương án 1: [Tên]
+- Ưu: ...
+- Nhược: ...
 
-### Option 2: [Name]
-- Pros: ...
-- Cons: ...
+### Phương án 2: [Tên]
+- Ưu: ...
+- Nhược: ...
 
-### Option 3: [Name]
-- Pros: ...
-- Cons: ...
+### Phương án 3: [Tên]
+- Ưu: ...
+- Nhược: ...
 
-## Decision
+## Quyết định
 
-[What did we decide? Be specific.]
+[Đã quyết định gì? Cụ thể.]
 
-## Rationale
+## Lý do
 
-[Why this option? What factors mattered most?]
+[Tại sao chọn phương án này? Yếu tố nào quan trọng nhất?]
 
-## Trade-offs
+## Đánh đổi
 
-[What did we give up? What risks did we accept?]
+[Đã chấp nhận bỏ gì? Rủi ro nào đã chấp nhận?]
 
-## Implementation
+## Triển khai
 
-[How will this be executed?]
+[Sẽ thực hiện như thế nào?]
 
 ## Follow-up
 
-[What needs to happen next?]
+[Cần làm gì tiếp theo?]
 
-## Review Date
+## Ngày xem lại
 
-[When should we revisit this decision?]
+[Khi nào cần xem lại quyết định này?]
 
 ---
 
-*Last updated: YYYY-MM-DD*
+*Cập nhật lần cuối: YYYY-MM-DD*
 ```
 
-## When to Use
+## Khi nào dùng
 
-- Architecture decisions
-- Tool/framework choices
-- Process changes
-- Strategy shifts
-- Anything that might be questioned later
+- Quyết định kiến trúc
+- Lựa chọn công cụ / framework
+- Thay đổi quy trình
+- Chuyển hướng chiến lược
+- Bất kỳ điều gì sau này có thể bị hỏi "tại sao làm vậy?"
 
-## When NOT to Use
+## Khi nào KHÔNG dùng
 
-- Routine tasks
-- Minor preferences
-- Obvious fixes
-- Personal opinions
+- Công việc thường ngày
+- Tuỳ chọn nhỏ
+- Sửa lỗi hiển nhiên
+- Ý kiến cá nhân

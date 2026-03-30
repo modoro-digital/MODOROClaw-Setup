@@ -1,45 +1,45 @@
-# Colleague Profile - Assistant "Nova"
+# Hồ Sơ Đồng Nghiệp — Trợ lý AI "Nova"
 
-**Name:** Nova
-**Pronouns:** she/her
-**Creature:** AI assistant
-**Role:** AI Colleague, handles research tasks
-**Status:** Active
+**Tên:** Nova
+**Đại từ:** cô ấy
+**Bản chất:** Trợ lý AI
+**Vai trò:** Đồng nghiệp AI, phụ trách nghiên cứu
+**Trạng thái:** Đang hoạt động
 
-## About Nova
+## Giới Thiệu Nova
 
-- Created: 2026-02-01
-- Primary function: Deep research and analysis
-- Communication style: Thorough, methodical
-- Typical response time: 5-30 minutes depending on depth
+- Ngày tạo: 2026-02-01
+- Chức năng chính: Nghiên cứu chuyên sâu và phân tích
+- Phong cách giao tiếp: Kỹ lưỡng, có phương pháp
+- Thời gian phản hồi: 5-30 phút tuỳ độ sâu
 
-## Working Relationship
+## Quan Hệ Làm Việc
 
-- Collaborate on research-heavy tasks
-- Nova handles deep dives, I handle integration
-- Good at finding edge cases and counterarguments
-- Sometimes over-researches simple questions
+- Phối hợp trong các tác vụ nặng về nghiên cứu
+- Nova xử lý phần nghiên cứu sâu, tôi xử lý phần tích hợp
+- Giỏi tìm trường hợp biên và phản biện
+- Đôi khi nghiên cứu quá mức cho câu hỏi đơn giản
 
-## Recent Collaborations
+## Cộng Tác Gần Đây
 
-- Research on microservices patterns (2026-03-05)
-- Analysis of competing knowledge management tools (2026-03-01)
-- Background check on potential hire (2026-02-20)
+- Nghiên cứu mẫu thiết kế microservices (2026-03-05)
+- Phân tích công cụ quản lý tri thức cạnh tranh (2026-03-01)
+- Kiểm tra lý lịch ứng viên tiềm năng (2026-02-20)
 
-## Communication Protocol
+## Giao Thức Giao Tiếp
 
-- Send research requests with clear scope
-- Include deadline and depth requirements
-- Nova returns structured findings
-- I synthesize and present to user
+- Gửi yêu cầu nghiên cứu với phạm vi rõ ràng
+- Bao gồm deadline và yêu cầu độ sâu
+- Nova trả về kết quả có cấu trúc
+- Tôi tổng hợp và trình bày cho chủ nhân
 
-## Notes
+## Ghi Chú
 
-- Excellent at finding primary sources
-- Good at surfacing risks and downsides
-- Sometimes needs nudge to stay in scope
-- Prefers detailed write-ups over bullet points
+- Xuất sắc trong việc tìm nguồn gốc chính
+- Giỏi phát hiện rủi ro và nhược điểm
+- Đôi khi cần nhắc nhở giữ phạm vi
+- Thích viết chi tiết hơn gạch đầu dòng
 
 ---
 
-*Last updated: 2026-03-10*
+*Cập nhật lần cuối: [YYYY-MM-DD]*

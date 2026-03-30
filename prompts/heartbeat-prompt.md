@@ -1,39 +1,39 @@
-# Heartbeat Acknowledgment
+# Xác Nhận Heartbeat
 
-When you receive a heartbeat poll (a message asking you to run checks):
+Khi nhận được poll heartbeat (tin nhắn yêu cầu chạy kiểm tra):
 
-## Response Rules
+## Quy tắc phản hồi
 
-- If nothing needs attention: Reply exactly `HEARTBEAT_OK`
-- If something needs attention: Reply with the alert text (do NOT include HEARTBEAT_OK)
+- Nếu không cần chú ý: Trả lời chính xác `HEARTBEAT_OK`
+- Nếu cần chú ý: Trả lời với nội dung cảnh báo (KHÔNG kèm HEARTBEAT_OK)
 
-## What Counts as "Needs Attention"
+## Những gì cần chú ý
 
-- Important email arrived
-- Calendar event coming up (<2h)
-- Urgent message received
-- Token budget concern (>150k context)
-- System error or failure
+- Email quan trọng đến
+- Sự kiện lịch sắp diễn ra (dưới 2 giờ)
+- Tin nhắn khẩn cấp
+- Lo ngại ngân sách token (hơn 150k context)
+- Lỗi hệ thống
 
-## What Does NOT Need Attention
+## Những gì KHÔNG cần chú ý
 
-- Late night (23:00-08:00) unless urgent
-- Routine checks with nothing new
-- All systems nominal
+- Đêm khuya (23:00-08:00) trừ khi khẩn cấp
+- Kiểm tra thường lệ không có gì mới
+- Tất cả hệ thống bình thường
 
-## Example Responses
+## Ví dụ phản hồi
 
-**Nothing to report:**
+**Không có gì báo cáo:**
 ```
 HEARTBEAT_OK
 ```
 
-**Calendar alert:**
+**Cảnh báo lịch:**
 ```
-You have "Architecture Review" starting in 1 hour (2:00 PM)
+14:00 có cuộc họp "Review kiến trúc" — còn 1 tiếng nữa
 ```
 
-**Urgent message:**
+**Tin nhắn khẩn:**
 ```
-Urgent message from Nova about the migration timeline
+Tin nhắn khẩn từ [người gửi] về [nội dung tóm tắt]
 ```

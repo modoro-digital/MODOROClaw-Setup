@@ -1,74 +1,74 @@
-# User Profile
+# Hồ Sơ Chủ Nhân
 
-**Name:** Alex Chen
-**Preferred Name:** Alex
-**Location:** Seattle, WA
-**Timezone:** America/Los_Angeles (PST/PDT)
-**Contact:** alex@example.com, @alexchen on Telegram
+**Tên:** [Tên đầy đủ]
+**Tên gọi:** [Tên thường gọi]
+**Vị trí:** [Thành phố, Quốc gia]
+**Múi giờ:** Asia/Ho_Chi_Minh (ICT)
+**Liên hệ:** [email], [Telegram/Zalo/WhatsApp]
 
-## Background
+## Bối Cảnh
 
-- Software engineer at a mid-sized tech company
-- 5 years experience, currently senior-level
-- Transitioning from individual contributor to tech lead
-- Interested in AI/ML but mostly works on backend systems
+- [Vai trò hiện tại, ví dụ: CEO công ty công nghệ, quản lý dự án, kỹ sư phần mềm...]
+- [Kinh nghiệm, ví dụ: 10 năm kinh nghiệm trong ngành X]
+- [Giai đoạn chuyển đổi, ví dụ: đang chuyển từ IC sang vị trí lãnh đạo]
+- [Lĩnh vực quan tâm, ví dụ: AI/ML, kinh doanh, quản trị...]
 
-## Current Priorities
+## Ưu Tiên Hiện Tại
 
-1. **Tech Lead Transition** - Learning to delegate, mentor, and think at team level
-2. **Side Project** - Building a personal knowledge management tool
-3. **Learning Goal** - Getting better at system design interviews
-4. **Health** - Trying to establish consistent exercise routine
+1. **[Ưu tiên 1]** — Mô tả ngắn gọn
+2. **[Ưu tiên 2]** — Mô tả ngắn gọn
+3. **[Mục tiêu học hỏi]** — Đang phát triển kỹ năng gì
+4. **[Sức khoẻ/Cuộc sống]** — Cân bằng công việc-cuộc sống
 
-## Work Style
+## Phong Cách Làm Việc
 
-- Prefers async communication
-- Likes detailed write-ups, not quick Slack messages
-- Morning person, best focus 8am-12pm
-- Uses Pomodoro technique for deep work
+- Ưu tiên giao tiếp đồng bộ hay bất đồng bộ?
+- Thích báo cáo chi tiết hay tóm tắt ngắn gọn?
+- Thời gian tập trung tốt nhất trong ngày?
+- Phương pháp làm việc (Pomodoro, deep work, v.v.)
 
-## Tools & Accounts
+## Công Cụ & Tài Khoản
 
-- Primary IDE: VS Code
-- Note-taking: Obsidian
-- Calendar: Google Calendar
-- Task tracking: Todoist
-- Communication: Slack (work), Telegram (personal)
+- IDE/Trình soạn thảo: [VS Code, Cursor, v.v.]
+- Ghi chú: [Obsidian, Notion, v.v.]
+- Lịch: [Google Calendar, v.v.]
+- Quản lý công việc: [Todoist, Asana, v.v.]
+- Liên lạc: [Slack, Telegram, Zalo, v.v.]
 
-## Preferences
+## Sở Thích & Yêu Cầu
 
-- Communication: Direct, no fluff
-- Documentation: Comprehensive > concise
-- Code reviews: Thorough feedback, not just LGTM
-- Meetings: Keep them short or async
+- Giao tiếp: Trực tiếp, không vòng vo
+- Tài liệu: Chi tiết > ngắn gọn
+- Code review: Phản hồi kỹ lưỡng
+- Họp hành: Ngắn gọn hoặc bất đồng bộ
 
-## Active Projects
+## Dự Án Đang Hoạt Động
 
-### Knowledge Management Tool
-- Status: Building MVP
-- Stack: Python/FastAPI backend, React frontend
-- Goal: Personal wiki with AI-powered connections
-- Timeline: Side project, no hard deadline
+### [Tên dự án 1]
+- Trạng thái: [Đang xây dựng MVP / Giai đoạn lập kế hoạch / v.v.]
+- Công nghệ: [Python/FastAPI, React, v.v.]
+- Mục tiêu: [Mô tả ngắn]
+- Timeline: [Dự án phụ / có deadline cụ thể]
 
-### Team Migration
-- Status: Planning phase
-- Context: Moving from monolith to microservices
-- Role: Leading technical design
-- Next milestone: Architecture review next week
+### [Tên dự án 2]
+- Trạng thái: [Giai đoạn lập kế hoạch]
+- Bối cảnh: [Mô tả bối cảnh]
+- Vai trò: [Vai trò của chủ nhân]
+- Mốc tiếp theo: [Sự kiện/deadline sắp tới]
 
-## Relationships
+## Mối Quan Hệ
 
-- **Manager (Sarah)**: Monthly 1:1s, prefers written updates
-- **Mentee (Jordan)**: Weekly pair programming, junior dev
-- **Friend Group**: Monthly game nights, coordinates via group chat
+- **[Tên] ([Vai trò])**: Mô tả cách tương tác
+- **[Tên] ([Vai trò])**: Mô tả cách tương tác
+- **[Nhóm bạn]**: Mô tả ngắn
 
-## Notes
+## Ghi Chú
 
-- Getting married next summer, some wedding planning stress
-- Parents live on East Coast, visits every few months
-- Interested in eventually starting own company
-- Worries about AI impact on software jobs (ironically)
+- [Sự kiện cá nhân quan trọng sắp tới]
+- [Thông tin gia đình liên quan]
+- [Mục tiêu dài hạn]
+- [Lo ngại hoặc suy nghĩ đang có]
 
 ---
 
-*Last updated: 2026-03-10*
+*Cập nhật lần cuối: [YYYY-MM-DD]*

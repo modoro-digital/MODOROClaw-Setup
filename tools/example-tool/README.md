@@ -1,53 +1,53 @@
-# Example Tool Template
+# Mẫu Công Cụ
 
-This is a template for creating new tools for your assistant.
+Đây là template để tạo công cụ mới cho trợ lý.
 
-## Structure
+## Cấu trúc
 
 ```
 tools/example-tool/
-├── README.md          # This file - what the tool does
-├── example-tool.js    # Main implementation
-├── package.json       # Dependencies (if Node)
-└── config.json        # Tool configuration (optional)
+├── README.md          # File này — công cụ làm gì
+├── example-tool.js    # Code chính
+├── package.json       # Dependencies (nếu dùng Node)
+└── config.json        # Cấu hình (tuỳ chọn)
 ```
 
-## Creating a New Tool
+## Tạo công cụ mới
 
-1. **Copy this directory**: `cp -r tools/example-tool tools/my-new-tool`
-2. **Rename files**: Update `example-tool.js` to your tool name
-3. **Update README.md**: Describe what your tool does
-4. **Implement**: Write your tool logic
-5. **Test**: Run it manually to verify
-6. **Integrate**: Reference from AGENTS.md or skills
+1. **Sao chép thư mục này**: `cp -r tools/example-tool tools/cong-cu-moi`
+2. **Đổi tên file**: Cập nhật `example-tool.js` thành tên công cụ của bạn
+3. **Cập nhật README.md**: Mô tả công cụ làm gì
+4. **Triển khai**: Viết logic công cụ
+5. **Kiểm tra**: Chạy thử thủ công để xác minh
+6. **Tích hợp**: Tham chiếu từ AGENTS.md hoặc skills
 
-## Tool Guidelines
+## Hướng dẫn công cụ
 
-- **Single purpose**: Each tool should do one thing well
-- **CLI-friendly**: Support command-line usage
-- **Documented**: Clear README with examples
-- **Reversible**: Prefer actions that can be undone
-- **Safe**: Don't expose secrets or credentials
+- **Mục đích đơn**: Mỗi công cụ nên làm tốt một việc
+- **Thân thiện CLI**: Hỗ trợ sử dụng dòng lệnh
+- **Có tài liệu**: README rõ ràng kèm ví dụ
+- **Đảo ngược được**: Ưu tiên hành động có thể hoàn tác
+- **An toàn**: Không để lộ secret hoặc credential
 
-## Example Usage
+## Ví dụ sử dụng
 
 ```bash
-# Direct execution
+# Chạy trực tiếp
 node tools/example-tool/example-tool.js --option value
 
-# From AGENTS.md reference
-node tools/my-tool/my-tool.js "input data"
+# Tham chiếu từ AGENTS.md
+node tools/cong-cu-moi/cong-cu-moi.js "dữ liệu đầu vào"
 ```
 
-## Integration with AGENTS.md
+## Tích hợp với AGENTS.md
 
-Add to your AGENTS.md:
+Thêm vào AGENTS.md:
 
 ```markdown
-## My Tool
-**Tool:** `tools/my-tool/my-tool.js`
-**Purpose:** Brief description
-**Usage:** `node tools/my-tool/my-tool.js [args]`
+## Công Cụ Của Tôi
+**Công cụ:** `tools/cong-cu-moi/cong-cu-moi.js`
+**Mục đích:** Mô tả ngắn
+**Sử dụng:** `node tools/cong-cu-moi/cong-cu-moi.js [tham số]`
 ```
 
-This makes it discoverable for your assistant.
+Điều này giúp trợ lý phát hiện và sử dụng công cụ.

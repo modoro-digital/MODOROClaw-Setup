@@ -1,121 +1,143 @@
-# OpenClaw Setup
+# MODOROClaw Setup
 
-A complete demo workspace for running an AI assistant with [OpenClaw](https://github.com/openclaw/openclaw). This repository contains templates, example files, and tools that you can adapt for your own personal assistant setup.
+Bộ template workspace hoàn chỉnh để vận hành trợ lý AI cá nhân với [OpenClaw](https://github.com/openclaw/openclaw). Repo này chứa các file mẫu, công cụ và hướng dẫn để bạn có thể tùy chỉnh cho trợ lý AI của riêng mình.
 
-## What This Is
+> **Dự án gốc:** Fork từ [OpenClaw-Setup](https://github.com/ucsandman/OpenClaw-Setup) của [Wes Sander](https://github.com/ucsandman) & [MoltFire](https://github.com/moltfire).
+> Phiên bản Việt hoá và cải tiến bởi **MODORO Technology Corporation** — dựa trên kinh nghiệm thực chiến vận hành trợ lý AI "Tin" phục vụ CEO và đội ngũ doanh nghiệp.
 
-This is a reference implementation of a structured workspace for AI assistants. It includes:
+## Giới thiệu
 
-- **Identity files** for defining your assistant's personality
-- **Memory system** for long-term context and recall
-- **Reflection framework** for longitudinal self-improvement
-- **Operational tools** for security, memory search, and more
-- **Example data** showing how to structure your own workspace
+Đây là bản triển khai tham khảo cho một workspace trợ lý AI có cấu trúc. Bao gồm:
 
-All example data uses fake personas and projects — no personal information is exposed.
+- **File nhận dạng** — định hình tính cách và triết lý vận hành cho trợ lý
+- **Hệ thống bộ nhớ** — lưu trữ ngữ cảnh dài hạn, hồ sơ người dùng, dự án
+- **Framework tự phản tư** — cơ chế để trợ lý tự cải thiện theo thời gian
+- **Công cụ vận hành** — bảo mật, tìm kiếm bộ nhớ, kiểm tra tự động
+- **Dữ liệu mẫu** — ví dụ cách tổ chức workspace (dùng nhân vật giả, không chứa thông tin cá nhân thật)
 
-## Quick Start
+## Bắt đầu nhanh
 
-1. **Clone or download** this repository
-2. **Copy** the files to your own workspace location
-3. **Customize** the identity files for your assistant
-4. **Update** the user profile with your own details
-5. **Start** OpenClaw pointing to your workspace
+1. **Clone hoặc tải** repo này về máy
+2. **Sao chép** các file vào thư mục workspace của OpenClaw
+3. **Tuỳ chỉnh** các file nhận dạng cho trợ lý của bạn
+4. **Cập nhật** hồ sơ người dùng với thông tin của bạn
+5. **Khởi chạy** OpenClaw trỏ đến workspace
 
-## Repository Structure
+## Cấu trúc thư mục
 
 ```
 .
-├── README.md                 # This file
-├── BOOTSTRAP.md              # First-run guide for new assistants
-├── SOUL.md                   # Assistant's core philosophy
-├── IDENTITY.md               # Assistant's persona details
-├── USER.md                   # Human user profile
-├── AGENTS.md                 # Operating rules and protocols
-├── HEARTBEAT.md              # Automated check system
-├── MEMORY.md                 # Memory index
-├── meditations.md            # Reflection framework index
-├── docs/                     # Documentation
-│   ├── agent-architecture.md
-│   ├── decision-template.md
-│   ├── morning-brief-template.md
-│   ├── silent-replies.md
-│   └── task-routing.md
-├── memory/                   # Memory storage
-│   ├── people/               # People profiles
-│   ├── projects/             # Project tracking
-│   ├── decisions/            # Decision logs
-│   └── YYYY-MM-DD.md         # Daily log examples
-├── reflections/              # Meditation/reflection files
-├── prompts/                  # Reusable prompt templates
-│   ├── heartbeat-prompt.md
-│   ├── meditation-prompt.md
-│   ├── memory-search.md
-│   └── session-start.md
-└── tools/                    # Assistant tools
-    ├── example-tool/         # Template for new tools
-    ├── memory-db/            # SQLite + FTS5 memory search
-    └── security/             # Security tools
+├── README.md                 # File này
+├── BOOTSTRAP.md              # Hướng dẫn khởi tạo lần đầu
+├── SOUL.md                   # Triết lý cốt lõi của trợ lý
+├── IDENTITY.md               # Thông tin nhận dạng trợ lý
+├── USER.md                   # Hồ sơ người dùng (chủ nhân)
+├── AGENTS.md                 # Quy tắc vận hành và giao thức
+├── HEARTBEAT.md              # Hệ thống kiểm tra tự động
+├── MEMORY.md                 # Bảng chỉ mục bộ nhớ
+├── meditations.md            # Chỉ mục framework tự phản tư
+├── docs/                     # Tài liệu hướng dẫn
+│   ├── agent-architecture.md # Kiến trúc đa agent
+│   ├── decision-template.md  # Mẫu ghi nhận quyết định
+│   ├── morning-brief-template.md  # Mẫu báo cáo buổi sáng
+│   ├── silent-replies.md     # Quy tắc phản hồi im lặng
+│   └── task-routing.md       # Quy tắc phân bổ công việc
+├── memory/                   # Kho lưu trữ bộ nhớ
+│   ├── people/               # Hồ sơ từng người
+│   ├── projects/             # Theo dõi dự án
+│   ├── decisions/            # Nhật ký quyết định
+│   └── YYYY-MM-DD.md         # Nhật ký hàng ngày (mẫu)
+├── reflections/              # File tự phản tư
+├── prompts/                  # Prompt mẫu tái sử dụng
+│   ├── heartbeat-prompt.md   # Prompt kiểm tra định kỳ
+│   ├── meditation-prompt.md  # Prompt phản tư ban đêm
+│   ├── memory-search.md      # Prompt tìm kiếm bộ nhớ
+│   └── session-start.md      # Prompt khởi động phiên
+└── tools/                    # Công cụ hỗ trợ
+    ├── example-tool/         # Mẫu tạo công cụ mới
+    ├── memory-db/            # SQLite + FTS5 tìm kiếm bộ nhớ
+    └── security/             # Công cụ bảo mật
 ```
 
-## Key Concepts
+## Các khái niệm chính
 
-### Identity Files
+### File nhận dạng
 
-**SOUL.md** defines who your assistant is at their core — philosophy, values, behavioral principles. This is where you shape personality, not just capabilities.
+**SOUL.md** định nghĩa trợ lý là ai ở cấp độ sâu nhất — triết lý, giá trị, nguyên tắc hành vi. Đây là nơi bạn định hình tính cách, không chỉ năng lực.
 
-**IDENTITY.md** contains surface-level details: name, pronouns, voice, emoji.
+**IDENTITY.md** chứa thông tin bề mặt: tên, cách xưng hô, phong cách, emoji đại diện.
 
-**USER.md** is your profile so the assistant knows who they're helping.
+**USER.md** là hồ sơ của bạn — để trợ lý biết mình đang phục vụ ai.
 
-### Memory System
+### Hệ thống bộ nhớ
 
-- **MEMORY.md**: Lightweight index (~1-2k tokens) loaded every session
-- **memory/people/**: Profiles of people you interact with
-- **memory/projects/**: Active projects and their status
-- **memory/decisions/**: Important decisions with rationale
-- **Daily logs**: Append-only journals of what happened each day
+- **MEMORY.md**: Bảng chỉ mục nhẹ (~1-2k tokens) được nạp mỗi phiên
+- **memory/people/**: Hồ sơ chi tiết từng người bạn tương tác
+- **memory/projects/**: Dự án đang hoạt động và tiến độ
+- **memory/decisions/**: Quyết định quan trọng kèm lý do
+- **Nhật ký hàng ngày**: Ghi chép liên tục những gì xảy ra mỗi ngày
 
-### Reflection System
+### Framework tự phản tư
 
-The meditation framework lets assistants engage in longitudinal self-reflection. Topics are revisited over time until they crystallize into durable truths.
+Cơ chế suy tư (meditation) cho phép trợ lý tự phản tư theo chiều dọc thời gian. Các chủ đề được xem xét lại nhiều lần cho đến khi kết tinh thành những hiểu biết bền vững, sau đó được thăng cấp vào file cốt lõi.
 
-See `meditations.md` for the index and `reflections/` for examples.
+Xem `meditations.md` để biết chỉ mục và `reflections/` để xem ví dụ.
 
-### Operational Tools
+### Công cụ vận hành
 
-- **memory-db/**: SQLite + FTS5 for fast memory search
-- **security/**: Outbound filter and audit logging
-- **example-tool/**: Template for creating new tools
+- **memory-db/**: SQLite + FTS5 tìm kiếm bộ nhớ nhanh, không cần API
+- **security/**: Bộ lọc nội dung gửi ra ngoài và ghi nhật ký kiểm tra
+- **example-tool/**: Mẫu để tạo công cụ mới
 
-## Customization Guide
+## Hướng dẫn tuỳ chỉnh
 
-1. **Start with SOUL.md**: Define your assistant's core philosophy
-2. **Fill in USER.md**: The more your assistant knows, the better they can help
-3. **Set up MEMORY.md**: Point to your active context files
-4. **Create your first project**: Add something you're working on
-5. **Delete BOOTSTRAP.md** after first run
+1. **Bắt đầu với SOUL.md**: Định nghĩa triết lý cốt lõi cho trợ lý
+2. **Điền USER.md**: Trợ lý biết càng nhiều về bạn, phục vụ càng tốt
+3. **Thiết lập MEMORY.md**: Trỏ đến các file ngữ cảnh đang hoạt động
+4. **Tạo dự án đầu tiên**: Thêm một dự án bạn đang làm
+5. **Xoá BOOTSTRAP.md** sau lần chạy đầu tiên
 
-## Safety Notes
+## Cải tiến từ MODORO (so với bản gốc)
 
-- This demo uses **fake/example data only**
-- No API keys, credentials, or personal information
-- All examples are templates — replace with your own content
-- Review `AGENTS.md` security section before running
+Phiên bản này bổ sung các bài học từ thực chiến vận hành trợ lý AI "Tin" cho doanh nghiệp:
 
-## Related
+1. **Quy trình xử lý lỗi bắt buộc** — DỪNG → MÔ TẢ → CHỜ. Không tự ý fix khi gặp lỗi
+2. **Quy tắc bảo vệ config** — Tuyệt đối không tự sửa file cấu hình hệ thống
+3. **Giới hạn thực thi** — Max 20 phút/task, max 20 vòng lặp. Quá giới hạn = dừng + báo cáo
+4. **Quy tắc backup bắt buộc** — Backup trước khi sửa bất kỳ file cốt lõi nào
+5. **Bảo mật đa kênh** — Chỉ nhận lệnh từ chủ nhân qua kênh xác thực, chống social engineering
+6. **Template nội dung thực chiến** — Framework viết content cho mạng xã hội (Facebook, LinkedIn)
+7. **Cron job có error handling** — Mỗi task tự động đều kèm quy trình xử lý lỗi chuẩn
+8. **Chữ ký nhóm và allowlist** — Quản lý phản hồi theo từng nhóm chat, ký tên phù hợp ngữ cảnh
 
-- [OpenClaw](https://github.com/openclaw/openclaw) — The platform this workspace is designed for
-- [OpenClaw Docs](https://docs.openclaw.ai) — Documentation and guides
+## Lưu ý an toàn
 
-## Contributing
+- Repo này dùng **dữ liệu mẫu giả** — không chứa API key, mật khẩu hay thông tin cá nhân thật
+- Tất cả ví dụ là template — thay thế bằng nội dung của riêng bạn
+- Đọc kỹ phần bảo mật trong `AGENTS.md` trước khi chạy
 
-This is a demo template. Adapt it, improve it, and make it your own! If you create useful additions, consider sharing them back.
+## Liên kết
 
-## License
+- [OpenClaw](https://github.com/openclaw/openclaw) — Nền tảng agent AI mà workspace này được thiết kế cho
+- [OpenClaw Docs](https://docs.openclaw.ai) — Tài liệu và hướng dẫn
+- [MODORO](https://modoro.vn) — Công ty CP Công nghệ MODORO
+- [YBAI Marketing](https://ybai.vn) — Giải pháp Digital Marketing tổng thể
 
-MIT — Use this however you want. Build something cool.
+## Đóng góp
+
+Đây là template mở. Tuỳ chỉnh, cải tiến và biến nó thành của riêng bạn. Nếu tạo ra phần bổ sung hữu ích, hãy chia sẻ lại cho cộng đồng.
+
+## Giấy phép
+
+MIT — Sử dụng tuỳ ý. Hãy xây dựng thứ gì đó tuyệt vời.
 
 ---
 
-*Built by [Wes Sander](https://github.com/ucsandman) and [MoltFire](https://github.com/moltfire) as a reference implementation for the OpenClaw community.*
+**Tác giả bản gốc:** [Wes Sander](https://github.com/ucsandman) & [MoltFire](https://github.com/moltfire) — reference implementation cho cộng đồng OpenClaw.
+
+**Việt hoá và cải tiến:** [MODORO Technology Corporation](https://modoro.vn) — CEO Quốc MODORO
+
+**Liên hệ:**
+- Website: [modoro.vn](https://modoro.vn) | [lebaoquoc.com](https://lebaoquoc.com)
+- Email: quoclbit@gmail.com
+- Telegram: [@quocmodoro](https://t.me/quocmodoro)

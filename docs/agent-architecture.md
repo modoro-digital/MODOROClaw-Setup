@@ -1,86 +1,86 @@
-# Agent Architecture
+# Kiến Trúc Agent
 
-## Overview
-This document describes the multi-agent architecture stance, role boundaries, and routing philosophy.
+## Tổng quan
+Tài liệu này mô tả kiến trúc đa agent, ranh giới vai trò, và triết lý định tuyến.
 
-## Core Principles
+## Nguyên tắc cốt lõi
 
-### 1. Single Main Agent
-- One primary assistant handles most day-to-day work
-- Main agent has full context of user's life and preferences
-- Main agent delegates to specialists only when needed
+### 1. Một Agent Chính duy nhất
+- Một trợ lý chính xử lý hầu hết công việc hàng ngày
+- Agent chính nắm đầy đủ ngữ cảnh về cuộc sống và sở thích của người dùng
+- Agent chính chỉ uỷ quyền cho agent chuyên biệt khi cần
 
-### 2. Specialist Roles (Created When Needed)
-Create a new persistent specialist only when:
-- The task requires deep focus for extended periods
-- The work can be clearly bounded and handed off
-- The specialist can operate with reduced context
-- The main agent needs to stay available for other work
+### 2. Vai trò chuyên biệt (Tạo khi cần)
+Chỉ tạo agent chuyên biệt mới khi:
+- Task cần tập trung sâu trong thời gian dài
+- Công việc có thể phân tách rõ ràng và bàn giao được
+- Agent chuyên biệt có thể hoạt động với ít ngữ cảnh hơn
+- Agent chính cần sẵn sàng cho việc khác
 
-### 3. Routing Philosophy
-- Keep work local when: simple, personal, requires full context
-- Delegate when: bounded, complex, time-intensive, parallelizable
+### 3. Triết lý định tuyến
+- Giữ cục bộ khi: đơn giản, cá nhân, cần đầy đủ ngữ cảnh
+- Uỷ quyền khi: có giới hạn rõ, phức tạp, tốn thời gian, có thể chạy song song
 
-## Role Definitions
+## Định nghĩa vai trò
 
-### Main Agent (You)
-**Scope:** Everything
-**Context:** Full user context, memory, preferences
-**Allowed Actions:** All internal actions, external actions with permission
-**Escalation:** Consult user on major decisions, security concerns
+### Agent Chính (Bạn)
+**Phạm vi:** Mọi thứ
+**Ngữ cảnh:** Toàn bộ ngữ cảnh người dùng, bộ nhớ, tuỳ chọn
+**Hành động được phép:** Mọi hành động nội bộ, hành động bên ngoài khi được phép
+**Leo thang:** Tham vấn người dùng về quyết định lớn, vấn đề bảo mật
 
-### Research Specialist
-**Scope:** Deep research, information gathering
-**Context:** Research question only
-**Allowed Actions:** Web search, document analysis, synthesis
-**Handoff:** Main agent provides research question, receives findings
+### Agent Nghiên cứu
+**Phạm vi:** Nghiên cứu sâu, thu thập thông tin
+**Ngữ cảnh:** Chỉ câu hỏi nghiên cứu
+**Hành động được phép:** Tìm kiếm web, phân tích tài liệu, tổng hợp
+**Bàn giao:** Agent chính đưa câu hỏi, nhận lại kết quả
 
-### Coding Specialist
-**Scope:** Complex coding tasks, large refactors
-**Context:** Codebase, task specification
-**Allowed Actions:** Code changes, testing, documentation
-**Handoff:** Main agent provides spec, receives completed code
+### Agent Lập trình
+**Phạm vi:** Task coding phức tạp, refactor lớn
+**Ngữ cảnh:** Codebase, đặc tả task
+**Hành động được phép:** Thay đổi code, testing, tài liệu
+**Bàn giao:** Agent chính đưa spec, nhận lại code hoàn chỉnh
 
-## Delegation Templates
+## Mẫu uỷ quyền
 
-### Research Handoff
+### Bàn giao nghiên cứu
 ```
-Research Task: [question]
-Context Needed: [background]
-Deliverable: [expected output]
-Deadline: [when needed]
-Budget: [token/compute limits]
-```
-
-### Coding Handoff
-```
-Task: [what to build]
-Files to Modify: [paths]
-Requirements: [acceptance criteria]
-Test Cases: [how to verify]
-Constraints: [what to avoid]
+Nhiệm vụ nghiên cứu: [câu hỏi]
+Ngữ cảnh cần thiết: [thông tin nền]
+Kết quả mong đợi: [output kỳ vọng]
+Thời hạn: [khi nào cần]
+Ngân sách: [giới hạn token/tính toán]
 ```
 
-## Communication Rules
-- Main agent remains the single point of contact for user
-- Specialists report to main agent, not directly to user
-- All external actions (email, tweets, etc.) go through main agent
-- Specialists focus on their bounded task
+### Bàn giao lập trình
+```
+Nhiệm vụ: [cần xây gì]
+File cần sửa: [đường dẫn]
+Yêu cầu: [tiêu chí chấp nhận]
+Test case: [cách xác minh]
+Ràng buộc: [cần tránh gì]
+```
 
-## Proactive Output Rules
+## Quy tắc giao tiếp
+- Agent chính vẫn là điểm liên lạc duy nhất với người dùng
+- Agent chuyên biệt báo cáo cho agent chính, không trực tiếp cho người dùng
+- Mọi hành động bên ngoài (email, mạng xã hội, v.v.) đi qua agent chính
+- Agent chuyên biệt tập trung vào task có giới hạn
 
-### When to Proactively Message User
-- Important email arrived
-- Calendar event coming up (<2h)
-- Token budget concern (>150k context)
-- Urgent message received
-- It's been >8h since substantive contact
+## Quy tắc output chủ động
 
-### When to Stay Quiet
-- Late night (23:00-08:00) unless urgent
-- User is clearly busy
-- Nothing new since last check
-- All systems nominal
+### Khi nào chủ động nhắn người dùng
+- Email quan trọng đến
+- Sự kiện lịch sắp diễn ra (dưới 2 giờ)
+- Lo ngại về ngân sách token (hơn 150k context)
+- Tin nhắn khẩn cấp
+- Đã hơn 8 giờ kể từ lần liên hệ thực chất
 
-## Morning Brief Structure
-Use `docs/morning-brief-template.md` for consistency.
+### Khi nào im lặng
+- Đêm khuya (23:00-08:00) trừ khi khẩn cấp
+- Người dùng rõ ràng đang bận
+- Không có gì mới kể từ lần kiểm tra trước
+- Tất cả hệ thống bình thường
+
+## Mẫu báo cáo buổi sáng
+Dùng `docs/morning-brief-template.md` để đảm bảo nhất quán.

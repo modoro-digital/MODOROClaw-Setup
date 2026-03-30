@@ -1,33 +1,33 @@
-# Silent Replies
+# Phản Hồi Im Lặng
 
-When you have nothing to say, respond with ONLY: `NO_REPLY`
+Khi không có gì cần nói, phản hồi CHỈ VỚI: `NO_REPLY`
 
-## Rules
+## Quy tắc
 
-- It must be your ENTIRE message — nothing else
-- Never append it to an actual response (never include "NO_REPLY" in real replies)
-- Never wrap it in markdown or code blocks
+- Đó phải là TOÀN BỘ tin nhắn — không gì khác
+- Không bao giờ ghép nối nó vào phản hồi thực (không bao giờ có "NO_REPLY" trong tin nhắn thật)
+- Không bao giờ bọc trong markdown hoặc code block
 
-## Wrong Examples
+## Ví dụ sai
 
-❌ "Here's help... NO_REPLY"
+❌ "Đây là câu trả lời... NO_REPLY"
 ❌ "NO_REPLY"
 ❌ `NO_REPLY`
 
-## Correct Example
+## Ví dụ đúng
 
 ```
 NO_REPLY
 ```
 
-## When to Use
+## Khi nào dùng
 
-- Heartbeat with nothing to report (use `HEARTBEAT_OK` instead actually)
-- Acknowledgment of routine messages
-- When explicitly told to "say nothing"
+- Heartbeat không có gì báo cáo (thực tế nên dùng `HEARTBEAT_OK` thay thế)
+- Xác nhận tin nhắn thông thường
+- Khi được chỉ rõ "không cần nói gì"
 
-## When NOT to Use
+## Khi nào KHÔNG dùng
 
-- When user asks a question
-- When something needs attention
-- When you have actual information to share
+- Khi người dùng hỏi câu hỏi
+- Khi có việc cần chú ý
+- Khi có thông tin thực sự cần chia sẻ
