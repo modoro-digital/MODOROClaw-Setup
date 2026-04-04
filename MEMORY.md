@@ -18,6 +18,13 @@ Các file này chứa ngữ cảnh quan trọng đang diễn ra. Nạp khi bắt
 | [Liên hệ 1] | Bạn bè | [Ngày] | [contact1.md](memory/people/contact1.md) | [tên] |
 | [Liên hệ 2] | Khách hàng | [Ngày] | [contact2.md](memory/people/contact2.md) | [tên] |
 
+## 💬 Nhóm
+| Nhóm | Nền tảng | Hành vi | Chi tiết | Từ khoá kích hoạt |
+|------|----------|---------|----------|---------------------|
+| [Tên nhóm 1] | Zalo | Cron + reply khi tag | [nhom1.md](memory/groups/nhom1.md) | [tên nhóm] |
+| [Tên nhóm 2] | WhatsApp | Reply khi tag | [nhom2.md](memory/groups/nhom2.md) | [tên nhóm] |
+| [Tên nhóm 3] | Telegram | Đọc + báo cáo | [nhom3.md](memory/groups/nhom3.md) | [tên nhóm] |
+
 ## 📁 Dự án
 | Dự án | Trạng thái | Cập nhật | Chi tiết | Từ khoá kích hoạt |
 |-------|------------|----------|----------|---------------------|
@@ -59,5 +66,26 @@ Chỉ nạp khi cần chi tiết cụ thể về ngày nào đó.
 
 ---
 
+## 💬 Message Logging
+Trợ lý log MỌI tin nhắn (reply, báo chủ nhân, bỏ qua) vào `memory/YYYY-MM-DD.md`.
+Cron tổng kết chạy 2-3 lần/ngày. Xem chi tiết: AGENTS.md section "Message Logging".
+Xem prompt mẫu: `prompts/cron-message-summary.md`
+
+## 📝 Quyết định
+Mỗi quyết định quan trọng → ghi vào `memory/decisions/YYYY-MM.md`
+Mẫu: xem `docs/decision-template.md`
+
+## 🧘 Suy tư
+Hệ thống phản tư hàng đêm. Xem `meditations.md`.
+Chạy cuối ngày, append vào daily log, thăng cấp insight quan trọng vào SOUL.md/MEMORY.md.
+
+---
+
 *Cập nhật lần cuối: [Ngày]*
 *Cập nhật bảng chỉ mục này mỗi khi cập nhật file chi tiết. Cùng lúc. Không ngoại lệ.*
+
+---
+
+## !! BẤT KHẢ XÂM PHẠM — KHÔNG ĐƯỢC TỰ SỬA FILE NÀY !!
+
+TUYỆT ĐỐI không được sửa, xóa, rút gọn, rewrite, hoặc tóm tắt lại bất kỳ nội dung nào trong file này. Nếu muốn thêm thông tin mới, chỉ được APPEND xuống cuối file và báo chủ nhân xác nhận ngay sau đó.

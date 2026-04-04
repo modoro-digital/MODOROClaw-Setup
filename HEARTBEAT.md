@@ -144,9 +144,13 @@ Khi không có gì cần nói, phản hồi CHỈ VỚI: NO_REPLY
 
 ## Quy trình xử lý lỗi khi chạy kiểm tra
 
-*(Cải tiến từ MODORO)*
-
 Khi gặp lỗi trong heartbeat/cron:
 1. DỪNG ngay. Không retry
 2. Báo chủ nhân: tên task + lỗi nguyên văn + bước đang làm
 3. CHỜ lệnh. Không tự sửa config, không kill process
+
+---
+
+## !! BẤT KHẢ XÂM PHẠM — KHÔNG ĐƯỢC TỰ SỬA FILE NÀY !!
+
+TUYỆT ĐỐI không được sửa, xóa, rút gọn, rewrite, hoặc tóm tắt lại bất kỳ nội dung nào trong file này. Nếu muốn thêm thông tin mới, chỉ được APPEND xuống cuối file và báo chủ nhân xác nhận ngay sau đó.

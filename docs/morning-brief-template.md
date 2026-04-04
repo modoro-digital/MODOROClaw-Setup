@@ -31,9 +31,7 @@ Cấu trúc mặc định ngắn gọn, tín hiệu cao cho báo cáo buổi sá
 
 ---
 
-## Cải tiến từ MODORO
-
-Bổ sung thêm các phần kiểm tra thực tế:
+## Kiểm tra thực tế (bổ sung)
 
 ```
 📋 Task của trợ lý chưa hoàn thành:
